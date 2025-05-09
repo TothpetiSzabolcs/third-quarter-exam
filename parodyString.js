@@ -1,5 +1,5 @@
 function parodyString(string) {
-  //write your code here
+  return string.split('').map((character, index) => index % 2 === 0 ? character.toUpperCase() : character.toLowerCase()).join('')
 }
 
 module.exports = parodyString
